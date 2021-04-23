@@ -1,0 +1,162 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+body {
+  background-color: rgb(227, 230, 233);
+  font-family: "Lato", sans-serif;
+}
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  height: 50px;
+  background-color: rgb(227, 230, 233);
+  align-items: center;
+  color: black;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#header ul li {
+  list-style: none;
+}
+#header-img {
+  height: 50px;
+}
+#logo {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  width: 40%;
+}
+nav ul li a {
+  display: block;
+  color: black;
+  text-decoration: none;
+  line-height: 50px;
+  color: black;
+}
+nav ul li a:hover {
+  background-color: rgba(187, 157, 216, 0.5);
+}
+.form h2 {
+  padding-top: 80px;
+  text-align: center;
+}
+#form {
+  padding-top: 20px;
+  text-align: center;
+}
+
+input {
+  padding: 5px;
+  display: block;
+  margin: 20px auto;
+}
+
+input[type="email"] {
+  height: 30px;
+  width: 40%;
+}
+input[type="submit"] {
+  background-color: yellow;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border: unset;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+.form {
+  padding-bottom: 40px;
+}
+.wrappers {
+  display: block;
+  width: 70%;
+  margin: 20px auto;
+}
+.wrapper {
+  display: flex;
+  width: 100%;
+  padding-bottom: 20px;
+
+  height: 200px;
+}
+
+.wrappers h3 {
+  padding-bottom: 10px;
+}
+.wrapper img {
+  width: 30%;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.content {
+  width: 70%;
+  padding-top: 20px;
+}
+
+.video {
+  margin: 20px auto;
+  background-color: black;
+  display: flex;
+  width: 70%;
+  justify-content: center;
+}
+#pricing {
+  display: flex;
+  width: 70%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.product {
+  text-align: center;
+  border: 1px solid black;
+  margin: 20px;
+  width: calc(100% / 3);
+  min-width: 200px;
+}
+ul li {
+  text-align: center;
+  list-style: none;
+}
+.level {
+  padding: 5px;
+  background-color: rgba(216, 207, 207, 0.699);
+  font-weight: bold;
+  margin-bottom: 30px;
+  height: 50px;
+}
+#pricing h2 {
+  line-height: 30px;
+  margin-bottom: 20px;
+}
+
+#pricing ul {
+  margin-bottom: 20px;
+  line-height: 25px;
+}
+
+@media screen and (max-width: 576px) {
+  #pricing {
+    flex-direction: column;
+
+    border: 1px solid black;
+  }
+  .product {
+    margin: 20px auto;
+    min-width: 150px;
+  }
+  .wrapper img {
+    margin: 30px;
+  }
+}
